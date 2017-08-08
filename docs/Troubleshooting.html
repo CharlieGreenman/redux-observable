@@ -1,0 +1,562 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Troubleshooting · redux-observable</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    
+    <link rel="stylesheet" type="text/css" href="../website/style.css" />
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="api/createEpicMiddleware.html" />
+    
+    
+    <link rel="prev" href="FAQ.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">README</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Basics</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="basics/Epics.html">
+            
+                <a href="basics/Epics.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    Epics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="basics/SettingUpTheMiddleware.html">
+            
+                <a href="basics/SettingUpTheMiddleware.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    Setting Up The Middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Recipes</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="recipes/Cancellation.html">
+            
+                <a href="recipes/Cancellation.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Cancellation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="recipes/ErrorHandling.html">
+            
+                <a href="recipes/ErrorHandling.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    Error Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="recipes/InjectingDependenciesIntoEpics.html">
+            
+                <a href="recipes/InjectingDependenciesIntoEpics.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    Injecting Dependencies Into Epics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="recipes/WritingTests.html">
+            
+                <a href="recipes/WritingTests.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    Writing Tests
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="recipes/UsageWithUIFrameworks.html">
+            
+                <a href="recipes/UsageWithUIFrameworks.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    Usage with UI Frameworks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="recipes/AddingNewEpicsAsynchronously.html">
+            
+                <a href="recipes/AddingNewEpicsAsynchronously.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    Adding New Epics Asynchronously
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="recipes/HotModuleReplacement.html">
+            
+                <a href="recipes/HotModuleReplacement.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    Hot Module Replacement
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Help</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="FAQ.html">
+            
+                <a href="FAQ.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.2" data-path="Troubleshooting.html">
+            
+                <a href="Troubleshooting.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">API Reference</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="api/createEpicMiddleware.html">
+            
+                <a href="api/createEpicMiddleware.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    createEpicMiddleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="api/combineEpics.html">
+            
+                <a href="api/combineEpics.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    combineEpics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="api/EpicMiddleware.html">
+            
+                <a href="api/EpicMiddleware.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    EpicMiddleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Troubleshooting</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="troubleshooting-">Troubleshooting <a href="https://gitter.im/redux-observable/redux-observable?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge" target="_blank"><img src="https://badges.gitter.im/redux-observable/redux-observable.svg" alt="Join the chat at https://gitter.im/redux-observable/redux-observable"></a></h1>
+<p>This is a place to share common problems and solutions to them.  </p>
+<blockquote>
+<p>If your problem isn&apos;t yet listed here or you need other help, please use <a href="http://stackoverflow.com/questions/tagged/redux-observable" target="_blank">Stack Overflow</a> first with the <code>redux-observable</code> tag. If you don&apos;t receive a response after a reasonable amount of time, create an issue ticket that includes a link to your Stack Overflow question.</p>
+<p>You can also get help in our public <a href="https://gitter.im/redux-observable/redux-observable" target="_blank">Gitter channel</a>!</p>
+</blockquote>
+<hr>
+<h3 id="rxjs-operators-are-missing-eg-typeerror-actionoftypeswitchmap-is-not-a-function">RxJS operators are missing! e.g. TypeError: action$.ofType(...).switchMap is not a function</h3>
+<p>RxJS supports the ability to <a href="https://github.com/ReactiveX/rxjs#installation-and-usage" target="_blank">add operators individually</a> so your bundles remain small. redux-observable honors this by having the <code>ActionsObservable</code> extend <code>Observable</code> but otherwise not adding any of the core operators to the prototype.</p>
+<h4 id="add-all-operators">Add all operators</h4>
+<p>If you want to instead add all operators, you can import the entire library inside your entry <code>index.js</code>:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">import</span> <span class="token string">&apos;rxjs&apos;</span><span class="token punctuation">;</span>
+</code></pre>
+<p>This will add every core RxJS operator to the <code>Observable</code> prototype.</p>
+<h4 id="add-only-the-operators-you-use">Add only the operators you use</h4>
+<p>tl;dr</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">import</span> <span class="token string">&apos;rxjs/add/operator/switchMap&apos;</span><span class="token punctuation">;</span>
+action$<span class="token punctuation">.</span><span class="token function">ofType</span><span class="token punctuation">(</span><span class="token operator">...</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">switchMap</span><span class="token punctuation">(</span><span class="token operator">...</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// OR</span>
+
+<span class="token keyword">import</span> <span class="token punctuation">{</span> switchMap <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;rxjs/operator/switchMap&apos;</span><span class="token punctuation">;</span>
+action$<span class="token punctuation">.</span><span class="token function">ofType</span><span class="token punctuation">(</span><span class="token operator">...</span><span class="token punctuation">)</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">switchMap</span><span class="token punctuation">(</span><span class="token operator">...</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>There are several ways to do this, so we don&apos;t suggest any particular one in the docs. Check out the <a href="https://github.com/ReactiveX/rxjs#installation-and-usage" target="_blank">RxJS documentation on this</a>.</p>
+<p>If you use the <code>&apos;rxjs/add/operator/name&apos;</code> technique, you may find it helpful to create a single file where you place all of these so you don&apos;t have to import the same operators repeatedly.</p>
+<hr>
+<h3 id="typeerror-object-is-not-observable">TypeError: object is not observable</h3>
+<p>This almost always means somewhere you&apos;re passing an object to an RxJS operator that isn&apos;t observable-like. That means it&apos;s not an Observable, Promise, Array, doesn&apos;t support <code>Symbol.observable</code>, etc.</p>
+<p>The following are some examples of that.</p>
+<h4 id="action-store--observablefromstore">(action$, store) =&gt; Observable.from(store)</h4>
+<p>The store provided to your Epics is the same one provided by redux to the middleware. It is not a full version of the store, so it does not support the <code>Symbol.observable</code> interop point to allow <code>Observable.from(store)</code>. You can <a href="https://github.com/redux-observable/redux-observable/issues/56" target="_blank">learn more about this here</a>.</p>
+<hr>
+<h3 id="typeerror-cannot-read-property-subscribe-of-undefined">TypeError: Cannot read property &apos;subscribe&apos; of undefined</h3>
+<p>This almost always means you&apos;re using an operator somewhere that expects to be provided with an observable but you instead did not give it anything at all. Often, you may be passing a variable but it is unknowingly set to <code>undefined</code>, so step through a debugger to confirm.</p>
+<h4 id="happens-from-combineepics">Happens from <code>combineEpics()</code></h4>
+<p>Usually this means you&apos;re not returning an observable from one or more of your Epics. Often this is just a missing <code>return</code>.</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">const</span> myEpic <span class="token operator">=</span> action$ <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// MISSING EXPLICIT RETURN!</span>
+  action$<span class="token punctuation">.</span><span class="token function">ofType</span><span class="token punctuation">(</span><span class="token operator">...</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">etc</span><span class="token punctuation">(</span><span class="token operator">...</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="this-is-set-to-window">this is set to Window</h3>
+<p>If you are organizing your epics into a class. (E.g. in order to benefit from Angular 2 dependency injection), you might have made the mistake of using class methods:</p>
+<pre class="language-"><code class="lang-typescript"><span class="token keyword">class</span> <span class="token class-name">TooFancy</span> <span class="token punctuation">{</span>
+  <span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token keyword">private</span> somethingInjected<span class="token punctuation">:</span>SomethingInjected<span class="token punctuation">)</span>
+  checkAutoLogin <span class="token punctuation">(</span>action$<span class="token punctuation">:</span> Observable<span class="token operator">&lt;</span>IPayloadAction<span class="token operator">&gt;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// Is Window! when called from redux-observable</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>follow the docs and:</p>
+<pre class="language-"><code class="lang-typescript"><span class="token keyword">class</span> <span class="token class-name">TooFancy</span> <span class="token punctuation">{</span>
+  <span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token keyword">private</span> somethingInjected<span class="token punctuation">:</span>SomethingInjected<span class="token punctuation">)</span>
+  checkAutoLogin <span class="token operator">=</span>  <span class="token punctuation">(</span>action$<span class="token punctuation">:</span> Observable<span class="token operator">&lt;</span>IPayloadAction<span class="token operator">&gt;</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// YOu can access somethingInjected</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>See <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions" target="_blank">https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions</a> (Arrow functions used as methods)</p>
+<hr>
+<h2 id="something-else-doesnt-work">Something else doesn&#x2019;t work</h2>
+<p>If you think your issue is a bug with redux-observable, <a href="https://github.com/redux-observable/redux-observable/issues" target="_blank">create an issue</a>;  </p>
+<p>If you figure it out, <a href="https://github.com/redux-observable/redux-observable/edit/master/docs/Troubleshooting.md" target="_blank">edit this document</a> as a courtesy to the next person having the same problem.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="FAQ.html" class="navigation navigation-prev " aria-label="Previous page: FAQ">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="api/createEpicMiddleware.html" class="navigation navigation-next " aria-label="Next page: createEpicMiddleware">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Troubleshooting","level":"4.2","depth":1,"next":{"title":"createEpicMiddleware","level":"5.1","depth":1,"path":"docs/api/createEpicMiddleware.md","ref":"docs/api/createEpicMiddleware.md","articles":[]},"previous":{"title":"FAQ","level":"4.1","depth":1,"path":"docs/FAQ.md","ref":"docs/FAQ.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","prism","github","anker-enable","addcssjs"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"github":{"url":"https://github.com/redux-observable/redux-observable/"},"anker-enable":{},"search":{},"addcssjs":{"js":["website/script.js","https://sidecar.gitter.im/dist/sidecar.v1.js"],"css":["website/style.css"]},"lunr":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/redux-observable/redux-observable/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"redux-observable","gitbook":"^3.1.1"},"file":{"path":"docs/Troubleshooting.md","mtime":"2016-10-08T06:05:57.000Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2017-08-08T19:59:31.685Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-anker-enable/anker.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    
+    <script type="text/javascript" src="../website/script.js"></script>
+    
+    <script type="text/javascript" src="../https:/sidecar.gitter.im/dist/sidecar.v1.js"></script>
+    
+
+    </body>
+</html>
+
